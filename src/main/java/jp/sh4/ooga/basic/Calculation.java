@@ -1,4 +1,4 @@
-package jp.sh4.ooga;
+package jp.sh4.ooga.basic;
 
 /**
  * Created by sh-ogawa on 2017/01/25.

@@ -1,4 +1,4 @@
-package jp.sh4.ooga;
+package jp.sh4.ooga.basic;
 
 import static org.junit.Assert.*;
 
@@ -7,10 +7,11 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 /**
- * Created by tie207035 on 2017/01/25.
+ * Created by sh-ogawa on 2017/01/25.
  */
 public class CalculationTest {
 
+    //例外を検知する
     @Rule
     public ExpectedException expect = ExpectedException.none();
 
@@ -36,6 +37,7 @@ public class CalculationTest {
 
     @Test
     public void 徐法でゼロ除算させようとした場合に例外が発生することの確認(){
+        //デバッグすれば判るが、Ruleは毎回インスタンスを作り直すため、変更したら、変更しっぱなしにしておいて問題ない
         expect.expect(IllegalArgumentException.class);
         expect.expectMessage("Please pass a non-zero value to y.");
         assertEquals(2, Calculation.div(8, 0));
