@@ -11,7 +11,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.sources>src/main</sonar.sources>
-        <sonar.exclusions>src/test/**/.java</sonar.exclusions>
+        <sonar.exclusions>src/test/**/*.java</sonar.exclusions>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.jdbc.url>jdbc:mysql://localhost:3306/sonar</sonar.jdbc.url>
         <sonar.jdbc.driverClassName>com.mysql.jdbc.Driver</sonar.jdbc.driverClassName>
@@ -19,6 +19,9 @@
         <sonar.jdbc.password>sonar</sonar.jdbc.password>
         <sonar.verbose>true</sonar.verbose>
         <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
+        <java.version>1.8</java.version>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
     </properties>
 
     <dependencies>
