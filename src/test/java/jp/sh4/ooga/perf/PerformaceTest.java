@@ -22,7 +22,7 @@ public class PerformaceTest {
 
     @Test
     public void タイムアウトした場合のテスト(){
-        assertEquals(0, Performance.perform(1000));
+        assertEquals(0, Performance.perform(1500));
     }
 
     @Test
