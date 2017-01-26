@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.junit.rules.Timeout;
 
 /**
- * Created by tie207035 on 2017/01/25.
+ * Created by sh-ogawa on 2017/01/25.
  */
 public class PerformaceTest {
 
